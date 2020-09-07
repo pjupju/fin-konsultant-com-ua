@@ -1,0 +1,107 @@
+@import "vars";
+@import "fonts";
+@import "global";
+
+.banner{
+    background-color: #E5E5E5;
+    padding-top: 25px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    &__top{
+        position: relative;
+        &-subtitle{
+            text-transform: uppercase;
+            color: #8d8d8d;
+            @extend %gothampro-bold;
+            position: absolute;
+            left: 0;
+            top: 15px;
+            @media screen and (max-width: 975px){
+                position: relative;
+            }
+            @media screen and (max-width: 375px){
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+        &-title{
+            @extend %gothampro-bold;
+            font-size: 66px;
+            line-height: 92px;
+            max-width: 346px;
+            margin: 0 auto;
+            @media screen and (max-width: 975px){
+                margin: 20px 0 0;
+            }
+            @media screen and (max-width: 375px){
+                font-size: 34px;
+                line-height: 48px;
+            }
+        }
+    }
+    &__bottom{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 975px){
+            flex-direction: column;
+            margin: 50px 0;
+        }
+        @media screen and (max-width: 375px){
+            margin-top: 40px;
+        }
+    }
+    &__left-subtitle{
+        max-width: 205px;
+        font-size: 26px;
+        line-height: 40px;
+        @extend %gothampro-bold;
+        @media screen and (max-width: 375px){
+            font-size: 20px;
+            line-height: 31px;
+        }
+    }
+    &__left-counter{
+        line-height: 22px;
+        color: #8d8d8d;
+        @media screen and (max-width: 375px){
+            margin-top: 6px;
+        }
+        & span + span {
+            margin-left: 10px;
+        }
+    }
+    &__left-rating{
+        margin: 20px 0 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 350px;
+        @media screen and (max-width: 975px){
+            margin: 20px 0;
+        }
+    }
+    &__left-grade{
+        margin-left: 50px;
+        font-size: 50px;
+        line-height: 77px;
+        color: #8E58FF;
+        @extend %gothampro-bold;
+        @media screen and (max-width: 375px){
+            font-size: 32px;
+            line-height: 49px;
+            margin-left: 24px;
+        }
+    }
+    &__right img{
+        @media screen and (max-width: 640px) {
+            width: 400px;
+        }
+        @media screen and (max-width: 450px) {
+            width: 325px;
+        }
+        @media screen and (max-width: 375px) {
+            width: 276px;
+        }
+    }
+}

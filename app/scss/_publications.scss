@@ -21,12 +21,22 @@
         @media screen and (max-width: 770px){
             order: 1;
         }
+        @media screen and (max-width: 400px){
+            font-size: 30px;
+            line-height: 42px;
+            max-width: 276px;
+        }
     }
     &__top-right{
         text-transform: uppercase;
         color: #8d8d8d;
         @extend %gothampro-bold;
         margin-top: 12px;
+        @media screen and (max-width: 400px){
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
     }
     &__items{
         margin-top: 100px;
@@ -52,6 +62,9 @@
         @media screen and (max-width: 770px){
             padding-left: 0;
         }
+        @media screen and (max-width: 550px){
+            width: 100%;
+        }
     }
     &__item-subtitle{
         text-transform: uppercase;
@@ -71,6 +84,12 @@
             @media screen and (max-width: 770px){
                 max-width: 348px;
             }
+            @media screen and (max-width: 550px){
+                max-width: 300px;
+            }
+            @media screen and (max-width: 400px){
+                max-width: 276px;
+            }
         }
     }
     &__item-name{
@@ -82,8 +101,13 @@
         @media screen and (max-width: 770px){
             margin-bottom: 6px;
         }
+        @media screen and (max-width: 550px){
+            width: 100%;
+        }
         @media screen and (max-width: 400px){
             max-width: 400px;
+            font-size: 16px;
+            line-height: 24px;
         }
     }
     &__item-date{
