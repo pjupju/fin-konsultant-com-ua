@@ -41,12 +41,12 @@
         @media screen and (max-width: 1226px){
             padding: 0;
         }
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             font-size: 40px;
             line-height: 60px;
             margin-bottom: 50px;
         }
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             font-size: 30px;
             line-height: 45px;
             margin-bottom: 50px;
@@ -75,10 +75,10 @@
         padding: 30px;
         border: 1px solid #DDDDDD;
         width: 100%;
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             width: 400px;
         }
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             width: 400px;
         }
         @media screen and (max-width: 520px){
@@ -91,14 +91,14 @@
         justify-content: flex-start;
     }
     &__item-left img{
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             width: 55px;
             height: 55px;
         }
     }
     &__item-right{
         margin-left: 30px;
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             margin-left: 15px;
         }
     }
@@ -106,7 +106,7 @@
         font-size: 26px;
         line-height: 39px;
         @extend %gothampro-bold;
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             font-size: 16px;
             line-height: 22px;
         }
@@ -117,7 +117,7 @@
         margin-top: 10px;
     }
     &__item-star svg{
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             width: 18px;
             height: 18px;
         }
@@ -128,11 +128,11 @@
         font-size: 20px;
         line-height: 31px;
         @extend %gothampro-bold;
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             font-size: 16px;
             line-height: 25px;
         }
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 756px){
             margin-left: 5px;
         }
     }
@@ -149,7 +149,7 @@
             padding: 19px 225px;
             border: 1px solid #8E58FF;
             @extend %gothampro-bold;
-            @media screen and (max-width: 750px){
+            @media screen and (max-width: 756px){
                 padding: 19px 135px;
             }
             @media screen and (max-width: 520px){
@@ -214,7 +214,10 @@
     max-width: 582px !important;
     width: 580px !important;
     margin: 0 20px;
-    @media screen and (max-width: 750px){
+    &:focus{
+        outline: none;
+    }
+    @media screen and (max-width: 756px){
         width: 400px !important;
     }
     @media screen and (max-width: 520px){
@@ -226,46 +229,65 @@
 }
 
 .slick-prev{
-    left: 35%;
+    left: 34%;
     top: -31%;
-    background: url('../images/prev.svg') no-repeat;
     width: 40px;
     height: 18px;
+    &:before{
+        content: '';
+        background: url('../images/prev.svg') no-repeat center;
+        background-size: contain;
+        left: 0;
+        top: 0;
+        width: 45px;
+        height: 18px;
+        display: block;
+    }
     @media screen and (max-width: 860px){
         left: 25%;
     }
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 756px){
         top: -38%;
     }
     @media screen and (max-width: 520px){
         top: -42%;
+        left: 23%;
     }
     @media screen and (max-width: 450px){
-        left: 19%;
+        left: 18%;
     }
     @media screen and (max-width: 370px){
-        left: 13%;
+        left: 12%;
     }
 }
 .slick-next{
-    background: url('../images/prev.svg') no-repeat;
-    transform: rotate(180deg);
-    top: -33%;
+    top: -31%;
     left: 63%;
     width: 40px;
     height: 18px;
+    &:before{
+        content: '';
+        background: url('../images/next.svg') no-repeat center;
+        background-size: contain;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 18px;
+        display: block;
+    }
     @media screen and (max-width: 1025px){
         left: 60%;
+        top: -31%;
     }
     @media screen and (max-width: 860px){
-        left: 70%;
+        left: 68%;
     }
-    @media screen and (max-width: 750px){
-        top: -41%;
+    @media screen and (max-width: 756px){
+        top: -38%;
     }
     @media screen and (max-width: 520px){
-        top: -45%;
-        left: 66%;
+        top: -41%;
+        left: 68%;
     }
     @media screen and (max-width: 450px){
         left: 71%;
@@ -281,7 +303,6 @@
 .slick-next:focus
 {
     color: inherit;
-    background: url('../images/prev.svg') no-repeat;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
