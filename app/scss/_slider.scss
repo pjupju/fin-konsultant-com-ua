@@ -229,7 +229,7 @@
 }
 
 .slick-prev{
-    left: 34%;
+    left: 38%;
     top: -31%;
     width: 40px;
     height: 18px;
@@ -242,6 +242,12 @@
         width: 45px;
         height: 18px;
         display: block;
+    }
+    @media screen and (max-width: 1200px){
+        left: 36%;
+    }
+    @media screen and (max-width: 1025px){
+        left: 32%;
     }
     @media screen and (max-width: 860px){
         left: 25%;
@@ -261,8 +267,8 @@
     }
 }
 .slick-next{
-    top: -31%;
-    left: 63%;
+    top: -30%;
+    right: 38%;
     width: 40px;
     height: 18px;
     &:before{
@@ -275,25 +281,28 @@
         height: 18px;
         display: block;
     }
+    @media screen and (max-width: 1200px){
+        right: 36%;
+    }
     @media screen and (max-width: 1025px){
-        left: 60%;
         top: -31%;
+        right: 34%;
     }
     @media screen and (max-width: 860px){
-        left: 68%;
+        right: 25%;
     }
     @media screen and (max-width: 756px){
         top: -38%;
     }
     @media screen and (max-width: 520px){
         top: -41%;
-        left: 68%;
+        right: 23%;
     }
     @media screen and (max-width: 450px){
-        left: 71%;
+        right: 18%;
     }
     @media screen and (max-width: 370px){
-        left: 76%;
+        right: 12%;
     }
 }
 
